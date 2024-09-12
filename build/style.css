@@ -73,6 +73,10 @@ ul li:not([class])::before {
   transform: rotate(45deg);
 }
 
+.container {
+  max-width: 1164px;
+}
+
 .dropdown-menu > li::before {
   display: none;
 }
@@ -113,5 +117,21 @@ ul li:not([class])::before {
   margin-left: 46px;
   height: 27px;
   width: 27px;
+}
+
+.custom-navbar {
+  padding: 21px 0 39px;
+}
+.custom-navbar .navbar-brand {
+  margin: 0;
+}
+.custom-navbar .nav-item .nav-link {
+  padding: 8px 23px;
+  margin-top: 4px;
+  color: #fff;
+}
+.custom-navbar .nav-item .nav-link:hover {
+  text-decoration: none;
+  color: #E58D35;
 }
 /*# sourceMappingURL=style.css.map */
