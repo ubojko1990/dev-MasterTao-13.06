@@ -134,4 +134,10 @@ ul li:not([class])::before {
   text-decoration: none;
   color: #E58D35;
 }
+
+@media screen and (max-width: 1199px) {
+  .custom-navbar .nav-item .nav-link {
+    padding: 12px 18px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
