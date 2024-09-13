@@ -1,0 +1,54 @@
+@media screen and (max-width: 991.99px) {
+.container {
+    padding: 0 20px;
+}
+
+
+.custom-navbar {
+    padding: 13px 0 24px;
+
+    .navbar-brand {
+        img {
+            max-width: 126px;
+        }
+
+    }
+
+    .navbar-collapse {
+        text-align: center;
+        background: $bg-section;
+        transform: translate(0, 14px);
+        box-shadow: 14px 22px 40px #1e234266;
+        .btn {
+            margin-bottom: 60px;
+            font-size: 16px;
+            padding: 21px 40px;
+            width: 100%;
+            max-width: 295px;
+        }
+      
+    }
+
+    .navbar-nav {
+        padding: 33px 0 25px;
+        
+    }
+    
+    .nav-item {
+        .nav-link {
+            padding: 0;
+            font-size: 24px;
+            line-height: 222%;
+            margin: 0 0 10px 0;
+            
+        }
+
+     }
+
+  }
+
+
+}
+
+
+    
