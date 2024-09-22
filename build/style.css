@@ -120,6 +120,28 @@ ul li:not([class])::before {
   width: 27px;
 }
 
+.container-xxl {
+  max-width: 1820px;
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border: 2px solid #fff;
+  opacity: 1;
+  background-color: transparent;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 13px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
 .custom-navbar {
   padding: 21px 0 39px;
 }
@@ -170,6 +192,48 @@ ul li:not([class])::before {
 .custom-navbar [aria-expanded=true] .navbar-toggler-icon:after {
   transform: rotate(-45deg);
   top: 11px;
+}
+
+.banner .swiper-slide {
+  border-radius: 20px;
+}
+.banner .container {
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.banner-title {
+  font-size: 56px;
+  font-weight: 700;
+  max-width: 463px;
+  margin-bottom: 8px;
+  line-height: 126%;
+  text-transform: uppercase;
+}
+.banner-description {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 135%;
+  max-width: 340px;
+  margin-bottom: 37px;
+}
+.banner .swiper-button-prev,
+.banner .swiper-button-next {
+  height: 0;
+  width: 1523px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: #fff;
+  justify-content: flex-start;
+}
+.banner .swiper-button-prev:hover,
+.banner .swiper-button-next:hover {
+  color: #89C249;
+}
+.banner .swiper-button-next {
+  justify-content: flex-end;
 }
 
 @media screen and (max-width: 1199.99px) {

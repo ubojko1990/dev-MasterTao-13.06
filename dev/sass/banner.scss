@@ -1,0 +1,57 @@
+.banner {
+    .swiper-slide {
+        border-radius: 20px;
+    }
+    
+    
+
+
+    .container {
+        min-height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+
+    }
+
+    &-title {
+       font-size: 56px;
+       font-weight: 700;
+       max-width: 463px;
+       margin-bottom: 8px;
+       line-height: 126%;
+       text-transform: uppercase;
+       
+    }
+
+    &-description {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 135%;
+        max-width: 340px;
+        margin-bottom: 37px;
+    }
+
+   .swiper-button-prev,
+   .swiper-button-next {
+    height: 0;
+    width: 1523px;
+    left: 50%;
+    transform: translate(-50%,0);
+    color: #fff;
+    justify-content: flex-start;
+    &:hover {
+        color: $secondary-color;
+    }
+
+}
+
+
+.swiper-button-next {
+    justify-content: flex-end;
+
+}
+
+
+}
