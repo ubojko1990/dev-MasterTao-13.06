@@ -2,13 +2,26 @@ const swiper = new Swiper('.swiper', {
     loop: true,
     pagination: {
       el: '.swiper-pagination',
-      clickable:true,
+      clickable: true,
     },
+
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      enabled: false,
     },
-  
+    
+    breakpoints: {
+      // when window width is >= 992px
+      992: {
+        navigation: {
+          enabled: true,
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+      },
+
+      }
+         
+    },
+
   });
 
   const name = "Toyota"

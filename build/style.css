@@ -143,7 +143,7 @@ ul li:not([class])::before {
 }
 
 .custom-navbar {
-  padding: 21px 0 39px;
+  padding: 21px 0 33px;
 }
 .custom-navbar .navbar-brand {
   margin: 0;
@@ -195,7 +195,7 @@ ul li:not([class])::before {
 }
 
 .banner .swiper-slide {
-  border-radius: 20px;
+  background-position: center;
 }
 .banner .container {
   min-height: 700px;
@@ -203,6 +203,7 @@ ul li:not([class])::before {
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  padding: 0 12px 63px;
 }
 .banner-title {
   font-size: 56px;
@@ -222,9 +223,11 @@ ul li:not([class])::before {
 .banner .swiper-button-prev,
 .banner .swiper-button-next {
   height: 0;
-  width: 1523px;
+  max-width: 1598px;
+  padding: 0 50px;
   left: 50%;
-  transform: translate(-50%, 0);
+  width: 100%;
+  transform: translate(-50%, 23px);
   color: #fff;
   justify-content: flex-start;
 }
@@ -236,6 +239,15 @@ ul li:not([class])::before {
   justify-content: flex-end;
 }
 
+@media (min-width: 992.99px) {
+  .banner {
+    padding: 0 12px;
+  }
+  .banner .swiper-slide {
+    border-radius: 20px;
+    padding: 0 132px;
+  }
+}
 @media screen and (max-width: 1199.99px) {
   .custom-navbar .nav-item .nav-link {
     padding: 12px 18px;
@@ -273,6 +285,31 @@ ul li:not([class])::before {
     font-size: 24px;
     line-height: 222%;
     margin: 0 0 10px 0;
+  }
+  .banner .swiper-slide:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(4, 9, 17, 0.6);
+    z-index: -1;
+  }
+  .banner .container {
+    align-items: center;
+    text-align: center;
+    min-height: 649px;
+  }
+  .banner-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+    max-width: 295px;
+  }
+  .banner-description {
+    font-size: 16px;
+    margin-bottom: 18px;
+    max-width: 260px;
   }
 }
 /*# sourceMappingURL=style.css.map */

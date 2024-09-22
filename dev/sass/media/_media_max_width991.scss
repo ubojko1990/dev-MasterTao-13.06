@@ -47,5 +47,45 @@
          }
     
       }
+
+    .banner {
+        .swiper-slide {
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                background: #04091199;
+                z-index: -1;
+            }
+        }
+
+        .container {
+            align-items: center;
+            text-align: center;
+            min-height: 649px;
+        }
+
+        &-title {
+            
+            font-size: 32px;
+            margin-bottom: 10px;
+            max-width: 295px;
+            
+        }
+
+        &-description {
+            font-size: 16px;
+            margin-bottom: 18px;
+            max-width: 260px;
+        }
+    
+
+    }
+    
+
+     
     
 }
