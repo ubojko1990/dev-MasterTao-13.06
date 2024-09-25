@@ -28,7 +28,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 @font-face {
   font-family: "ProximaNova";
-  src: url("./assets/fonts/ProximaNova-SemiBold.ttf") format("truetype");
+  src: url("./assets/fonts/ProximaNova-Semibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -83,22 +83,23 @@ ul li:not([class])::before {
 
 .btn {
   font-family: "ProximaNova";
-  font-size: 15px;
-  line-height: 146%;
+  font-size: 16px;
+  line-height: 156%;
   border-radius: 90px;
   font-weight: 600;
   padding: 12px 26px;
   border: 1px solid #E58D35;
 }
-.btn:hover {
-  text-decoration: none;
-  border: 1px solid #E58D35;
-}
 .btn.btn-primary {
+  font-size: 15px;
   background-color: #E58D35;
 }
 .btn.btn-primary:hover {
   background-color: transparent;
+}
+.btn:hover {
+  text-decoration: none;
+  border: 1px solid #E58D35;
 }
 .btn.btn-secondary {
   background-color: transparent;
@@ -138,8 +139,65 @@ ul li:not([class])::before {
   margin: 0 13px;
 }
 
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  line-height: 0;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 43px;
+}
+
 .swiper-pagination-bullet-active {
   background-color: #fff;
+}
+
+.template-title {
+  text-align: center;
+  position: relative;
+  padding-bottom: 48px;
+}
+.template-title::before {
+  content: "";
+  position: absolute;
+  bottom: 33px;
+  left: 50%;
+  height: 2px;
+  width: 85px;
+  background: #89C249;
+  transform: translate(-50%, 0);
+}
+.template-title h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 125%;
+  margin-bottom: 6px;
+}
+.template-title h4 {
+  font-size: 24px;
+  font-weight: 400;
+}
+.template-title.case-2 {
+  text-align: left;
+}
+.template-title.case-2:before {
+  left: 0;
+  transform: none;
+}
+.template-title.case-3 {
+  max-width: 626px;
+  text-align: left;
+}
+.template-title.case-3::before {
+  display: none;
+}
+.template-title.case-3 h2::after {
+  content: "";
+  background-color: #89C249;
+  width: 85px;
+  height: 2px;
+  display: inline-block;
+  margin: 0 20px 10px;
 }
 
 .custom-navbar {
@@ -149,7 +207,7 @@ ul li:not([class])::before {
   margin: 0;
 }
 .custom-navbar .nav-item .nav-link {
-  padding: 12px 32px;
+  padding: 12px 23px;
   margin-top: 3px;
   color: #fff;
 }
