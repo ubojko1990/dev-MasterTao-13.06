@@ -6,26 +6,92 @@
     <meta name="theme-color" content="#188de7">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
     <title>Сборка Markup</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
 
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
 </head>
 
 <body>
-
-    <main class="wrapper home">
+    <header>
         <div class="container">
-            <h1>Hellow, I am first screen</h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus doloremque sequi laborum, quidem ipsum modi. Illo eius qui veniam laboriosam unde perferendis maiores, consequuntur ab rerum animi veritatis nesciunt. Sint.
+            <nav class="navbar navbar-expand-lg custom-navbar">
+                <a class="navbar-brand" href="index.html">
+             <img src="assets/img/logo.svg" alt="logo">
+           </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Цены и сроки</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">О компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Оформить груз</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary">Оставить заявку</button>
+                </div>
+            </nav>
         </div>
+    </header>
+    <main class="wrapper home">
+        <section class="banner">
+            <div class="swiper container-xxl">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url('assets/img/banner-1.png');">
+                        <div class="container">
+                            <div class="banner-title">Прямое КАРГО из Китая</div>
+                            <div class="banner-description">Доставляем любые грузы из Китая по честной цене</div>
+                            <button class="btn btn-primary btn-lg">Расчитать стоимость<img src="assets/img/Vector-7.svg" alt="arrow-left"></button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('assets/img/banner-2.png');">
+                        <div class="container">
+                            <div class="banner-title">Выкуп товара с ТаоБао, 1688</div>
+                            <div class="banner-description">Выкуп и доставка товаров с китайских торговых площадок. </div>
+                            <button class="btn btn-primary btn-lg">Расчитать стоимость<img src="assets/img/Vector-7.svg" alt="arrow-left"></button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('assets/img/banner-3.png');">
+                        <div class="container">
+                            <div class="banner-title">Экспресс авто доставка</div>
+                            <button class="btn btn-primary btn-lg">Расчитать стоимость<img src="assets/img/Vector-7.svg" alt="arrow-left"></button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('assets/img/banner-4.png');">
+                        <div class="container">
+                            <div class="banner-title">Выкуп товара с ТаоБао, 1688</div>
+                            <div class="banner-description">Выкуп и доставка товаров с китайских торговых площадок.</div>
+                            <button class="btn btn-primary btn-lg">Расчитать стоимость<img src="assets/img/Vector-7.svg" alt="arrow-left"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
     </main>
     <footer>
         Footer
     </footer>
     <a href="markap.html" style="position: fixed; left: 25px; bottom: 15px;">markap</a>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script async src="assets/js/custom.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
 
 </body>
 

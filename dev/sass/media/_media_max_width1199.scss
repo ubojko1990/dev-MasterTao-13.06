@@ -1,2 +1,11 @@
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.99px) {
+    .custom-navbar {
+        .nav-item {
+            .nav-link {
+                padding: 12px 18px;
+            }
+    
+        }
+    }
+    
 }
