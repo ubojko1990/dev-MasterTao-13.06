@@ -1,4 +1,4 @@
-@media screen and (max-width: 991.99px) {
+@media screen and (max-width: 991.9px) {
     .container {
         padding: 0 20px;
     }
@@ -85,8 +85,80 @@
     
 
     }
-    
 
-     
+    .bg-section {
+        padding: 0 100px 0;
+      
+        &::before {
+            width: 100%;
+            border-radius: 20px;
     
+        }
+       } 
+
+    .template-title {
+       h2 {
+            font-size: 24px;
+    }
+        h4 {
+            font-size: 16px;
+        }
+        :before {
+            bottom: 28px;
+
+    }
+
 }
+
+    .calculation {
+        padding-top: 51px;
+        padding-bottom: 59px;
+
+    
+    .calculation-img {
+        display: none;
+    }
+
+    .calculation-form {
+        margin: 0 auto;
+        padding: 72px 30px 34px;
+        .btn {
+            width: 100%;
+            padding: 23px 17px 17px 31px;
+            display: flex;
+            justify-content: space-between;
+            img {
+               margin: initial;
+            }
+         }
+
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .control-box {
+        &:first-child {
+            margin-top: 18px;
+        }
+        
+        &:last-child {
+            margin-bottom: 18px;
+        }
+
+    }
+
+    input {
+        &[type="file"] {
+            + label {
+                margin-top: 12px;
+            }
+        }
+        
+     }
+ 
+  }
+}
+

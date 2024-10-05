@@ -46,3 +46,13 @@ const swiper = new Swiper('.swiper', {
   }
   console.log(user.series.Air.model);
 
+
+  const typefile = document.querySelectorAll('.custom-file')
+
+  typefile.forEach(item =>{
+    item.addEventListener ('change', () =>{
+      const fileName = item.closest('.control-box').querySelector('.file-name')
+      fileName.innerHTML = item.files[0].name;
+    })
+  })
+

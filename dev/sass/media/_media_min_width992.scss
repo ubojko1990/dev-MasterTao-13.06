@@ -6,6 +6,39 @@
             border-radius: 20px;
             padding: 0 132px;
         }
-    }
+ }
+
+    .template-title {
+            &.case-2 {
+                text-align: left;
     
+                &:before {
+                    left: 0;
+                    transform: none;
+                }
+            }
+            &.case-3 {
+                max-width: 626px;
+                text-align: left;
+       
+                  &:before {
+                     display: none;
+                  }
+       
+           h2 { 
+           &::after {
+              content: "";
+              background-color: $secondary-color;
+              width: 85px;
+              height: 2px;
+              display: inline-block;
+              margin: 0 20px 10px;
+       
+            }
+         }
+       }
+    }
 }
+
+
+
