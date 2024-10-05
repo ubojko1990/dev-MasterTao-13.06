@@ -455,6 +455,39 @@ input[type=file] + label:active {
   box-shadow: 5px 15px 40px rgba(11, 24, 97, 0.32);
 }
 
+.advantages {
+  padding-bottom: 64px;
+}
+
+.advantage {
+  width: 100%;
+  max-width: 263px;
+  margin: 0 auto;
+  text-align: center;
+}
+.advantage-img {
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #6C7188;
+  padding: 10px;
+  margin-bottom: 22px;
+}
+.advantage-img img {
+  width: 91px;
+  background-color: #89C249;
+  height: 91px;
+  object-fit: scale-down;
+  border-radius: 50%;
+}
+
+.advantage-title {
+  font-size: 18px;
+  line-height: 124%;
+  min-height: 105px;
+  margin: 0;
+  font-weight: 400;
+}
+
 @media (min-width: 992.99px) {
   .banner {
     padding: 0 12px;
@@ -534,6 +567,13 @@ input[type=file] + label:active {
     background: rgba(4, 9, 17, 0.6);
     z-index: -1;
   }
+  .banner .bg-section {
+    padding: 0 100px 0;
+  }
+  .banner .bg-section::before {
+    width: 100%;
+    border-radius: 20px;
+  }
   .banner .container {
     align-items: center;
     text-align: center;
@@ -549,13 +589,6 @@ input[type=file] + label:active {
     font-size: 16px;
     margin-bottom: 18px;
     max-width: 260px;
-  }
-  .bg-section {
-    padding: 0 100px 0;
-  }
-  .bg-section::before {
-    width: 100%;
-    border-radius: 20px;
   }
   .template-title h2 {
     font-size: 24px;
