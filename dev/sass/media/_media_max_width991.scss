@@ -49,6 +49,7 @@
       }
 
     .banner {
+        padding-bottom: 0;
         .swiper-slide {
             &:before {
                 content: "";
@@ -80,7 +81,6 @@
         }
 
         &-title {
-            
             font-size: 32px;
             margin-bottom: 10px;
             max-width: 295px;
@@ -96,24 +96,40 @@
 
     }
 
+    .bg-section {
+        padding: 0 100px 0;
+      
+        &::before {
+            width: 100%;
+            border-radius: 20px;
+    
+        }
+       } 
 
-    .template-title {
+    .template-title { 
        h2 {
             font-size: 24px;
+            
     }
         h4 {
             font-size: 16px;
         }
         :before {
-            bottom: 28px;
+            bottom: 30px;
 
     }
 
 }
 
     .calculation {
-        padding-top: 51px;
-        padding-bottom: 59px;
+        padding: 54px 0 56px;
+    }
+      
+    .calculation-row {
+        display: flex;
+        align-items: flex-start;
+        padding-top: 21px;
+    }
 
     
     .calculation-img {
@@ -122,7 +138,7 @@
 
     .calculation-form {
         margin: 0 auto;
-        padding: 72px 30px 34px;
+        padding: 50px 30px 34px;
         .btn {
             width: 100%;
             padding: 23px 17px 17px 31px;
@@ -159,7 +175,65 @@
         }
         
      }
+
+   
+
+     .bg-section {
+        padding: 59px 29px 51px;
+        &::before{
+            border-radius: unset;
+        }
+        .template-title {
+            &.case-4 {
+                margin-left: 17px;
+            }
+        }
+
+         
+    }
+    
+    .advantages {
+        .swiper {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        }
+    }
+    
+    .advantage-title  {
+        max-width: 212px;
+        margin-top: -3px;
+        margin-left: 71px;
+    
+    }
+    
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, 
+    .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: 7px;
+  
  
+  }
+
+  .delivery {
+    .template-title {
+        margin-bottom: 2px;
+        display: flex;
+        align-items: center;
+        max-width: 368px;
+        margin-bottom: 0;
+        margin-top: -39px;
+        margin-left: 8px;
+    }
+   
+  }
+
+  .card {
+    .img-box {
+        margin-bottom: 29px;
+    }
+
   }
 }
 
+
+
+  

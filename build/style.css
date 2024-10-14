@@ -128,7 +128,6 @@ ul li:not([class])::before {
 .container-xxl {
   max-width: 1820px;
   width: 100%;
-  width: 100%;
 }
 
 .swiper-pagination-bullet {
@@ -137,6 +136,9 @@ ul li:not([class])::before {
   border: 2px solid #fff;
   opacity: 1;
   background-color: transparent;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #fff;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
@@ -148,18 +150,10 @@ ul li:not([class])::before {
   line-height: 0;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-  bottom: 43px;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #fff;
-}
-
 .template-title {
   text-align: center;
   position: relative;
-  padding-bottom: 48px;
+  padding-bottom: 53px;
 }
 .template-title:before {
   content: "";
@@ -359,6 +353,9 @@ input[type=file] + label:active {
 .banner .swiper-button-next {
   justify-content: flex-end;
 }
+.banner .swiper-horizontal > .swiper-pagination-bullets, .banner .swiper-pagination-bullets.swiper-pagination-horizontal, .banner .swiper-pagination-custom, .banner .swiper-pagination-fraction {
+  bottom: 43px;
+}
 
 .calculation {
   padding: 99px 0 114px;
@@ -389,7 +386,7 @@ input[type=file] + label:active {
 .calculation-img {
   position: absolute;
   left: 610px;
-  bottom: -125px;
+  bottom: -110px;
   width: 29.167vw;
   max-width: 560px;
   min-width: 360px;
@@ -455,39 +452,6 @@ input[type=file] + label:active {
   box-shadow: 5px 15px 40px rgba(11, 24, 97, 0.32);
 }
 
-.advantages {
-  padding-bottom: 64px;
-}
-
-.advantage {
-  width: 100%;
-  max-width: 263px;
-  margin: 0 auto;
-  text-align: center;
-}
-.advantage-img {
-  display: inline-block;
-  border-radius: 50%;
-  border: 1px solid #6C7188;
-  padding: 10px;
-  margin-bottom: 22px;
-}
-.advantage-img img {
-  width: 91px;
-  background-color: #89C249;
-  height: 91px;
-  object-fit: scale-down;
-  border-radius: 50%;
-}
-
-.advantage-title {
-  font-size: 18px;
-  line-height: 124%;
-  min-height: 105px;
-  margin: 0;
-  font-weight: 400;
-}
-
 @media (min-width: 992.99px) {
   .banner {
     padding: 0 12px;
@@ -510,6 +474,9 @@ input[type=file] + label:active {
   .template-title.case-3:before {
     display: none;
   }
+  .template-title.case-3.case-4 {
+    margin-left: -68px;
+  }
   .template-title.case-3 h2::after {
     content: "";
     background-color: #89C249;
@@ -518,8 +485,29 @@ input[type=file] + label:active {
     display: inline-block;
     margin: 0 20px 10px;
   }
+  #advantages {
+    padding-top: 17px;
+    width: calc(100% + 28px);
+    margin: 0 -45px;
+  }
+  #advantages .swiper-wrapper {
+    flex-wrap: wrap;
+  }
+  #advantages .advantage {
+    width: 100%;
+    max-width: 25%;
+    padding: 0 22px;
+  }
 }
-@media screen and (max-width: 1199.99px) {
+@media screen and (max-width: 1251.99px) {
+  .slider-template {
+    width: 750px;
+  }
+  .slider-template ~ .swiper-navigation {
+    max-width: 942px;
+  }
+}
+@media screen and (max-width: 1251.99px) and (max-width: 1199.99px) {
   .custom-navbar .nav-item .nav-link {
     padding: 12px 18px;
   }
@@ -557,6 +545,9 @@ input[type=file] + label:active {
     line-height: 222%;
     margin: 0 0 10px 0;
   }
+  .banner {
+    padding-bottom: 0;
+  }
   .banner .swiper-slide:before {
     content: "";
     position: absolute;
@@ -590,6 +581,13 @@ input[type=file] + label:active {
     margin-bottom: 18px;
     max-width: 260px;
   }
+  .bg-section {
+    padding: 0 100px 0;
+  }
+  .bg-section::before {
+    width: 100%;
+    border-radius: 20px;
+  }
   .template-title h2 {
     font-size: 24px;
   }
@@ -597,40 +595,117 @@ input[type=file] + label:active {
     font-size: 16px;
   }
   .template-title :before {
-    bottom: 28px;
+    bottom: 30px;
   }
   .calculation {
-    padding-top: 51px;
-    padding-bottom: 59px;
+    padding: 54px 0 56px;
   }
-  .calculation .calculation-img {
+  .calculation-row {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 21px;
+  }
+  .calculation-img {
     display: none;
   }
-  .calculation .calculation-form {
+  .calculation-form {
     margin: 0 auto;
-    padding: 72px 30px 34px;
+    padding: 50px 30px 34px;
   }
-  .calculation .calculation-form .btn {
+  .calculation-form .btn {
     width: 100%;
     padding: 23px 17px 17px 31px;
     display: flex;
     justify-content: space-between;
   }
-  .calculation .calculation-form .btn img {
+  .calculation-form .btn img {
     margin: initial;
   }
-  .calculation .form-row {
+  .form-row {
     flex-direction: column;
     gap: 0;
   }
-  .calculation .control-box:first-child {
+  .control-box:first-child {
     margin-top: 18px;
   }
-  .calculation .control-box:last-child {
+  .control-box:last-child {
     margin-bottom: 18px;
   }
-  .calculation input[type=file] + label {
+  input[type=file] + label {
     margin-top: 12px;
+  }
+  .bg-section {
+    padding: 59px 29px 51px;
+  }
+  .bg-section::before {
+    border-radius: unset;
+  }
+  .bg-section .template-title.case-4 {
+    margin-left: 17px;
+  }
+  .advantages .swiper {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .advantage-title {
+    max-width: 212px;
+    margin-top: -3px;
+    margin-left: 71px;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 7px;
+  }
+  .delivery .template-title {
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    max-width: 368px;
+    margin-bottom: 0;
+    margin-top: -39px;
+    margin-left: 8px;
+  }
+  .card .img-box {
+    margin-bottom: 29px;
+  }
+}
+@media screen and (max-width: 861.99px) {
+  .slider-template {
+    max-width: 360px;
+    padding-bottom: 50px;
+  }
+  .slider-template ~ .swiper-navigation {
+    max-width: 552px;
+  }
+}
+@media screen and (max-width: 767.99px) {
+  .swiper-navigation {
+    display: none;
+  }
+  .slider-template {
+    max-width: 335px;
+    padding-bottom: 50px;
+  }
+  .card {
+    max-width: 335px;
+    padding-bottom: 0 23px 27px;
+  }
+  .card .img-box {
+    margin: 0 -20px 28px;
+  }
+  .card .card-title {
+    margin-bottom: 10px;
+  }
+  .card .card-option {
+    margin: 0 0 27px 0;
+  }
+  .card .card-price {
+    margin-bottom: 24px;
+  }
+  .card .btn-row .btn {
+    width: 50%;
+    max-width: 138px;
+    padding: 13px 8px;
   }
 }
 /*# sourceMappingURL=style.css.map */

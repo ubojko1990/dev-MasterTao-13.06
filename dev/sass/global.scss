@@ -128,7 +128,7 @@ ul {
 .container-xxl {
     max-width: 1820px;
     width: 100%;
-    width: 100%;
+    
    
 }
 
@@ -138,6 +138,11 @@ ul {
     border: 2px solid #fff;
     opacity: 1;
     background-color: transparent;
+
+    &.swiper-pagination-bullet-active {
+        background-color: #fff;
+       
+    }
    
 }
 
@@ -150,19 +155,13 @@ ul {
     line-height: 0;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-    bottom: 43px;
-}
 
-.swiper-pagination-bullet-active {
-    background-color: #fff;
-   
-}
+
 
 .template-title {
     text-align: center;
     position: relative;
-    padding-bottom: 48px;
+    padding-bottom: 53px;
 
     &:before {
         content: "";
