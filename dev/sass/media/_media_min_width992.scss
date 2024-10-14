@@ -24,7 +24,10 @@
                   &:before {
                      display: none;
                   }
-       
+
+            &.case-4 {
+                margin-left: -68px;
+                  }
            h2 { 
            &::after {
               content: "";
@@ -37,6 +40,26 @@
             }
          }
        }
+    }
+
+
+    #advantages {
+        padding-top: 17px;
+        width: calc(100% + 28px);
+        margin: 0 -45px;
+        .swiper-wrapper {
+            flex-wrap: wrap;
+            
+           
+        }
+
+        .advantage {
+            width: 100%;
+            max-width: 25%;
+            padding: 0 22px;
+
+        }
+
     }
 }
 

@@ -1,3 +1,13 @@
+@media screen and (max-width: 1251.99px) {
+.slider-template {
+    width: 750px;
+   ~ .swiper-navigation {
+        max-width: 942px;
+
+ }
+
+}
+
 @media screen and (max-width: 1199.99px) {
     .custom-navbar {
         .nav-item {
@@ -8,4 +18,5 @@
         }
     }
     
+}
 }
