@@ -44,3 +44,37 @@
         
     
 }
+.advantages {
+    padding-bottom: 64px;
+}
+
+
+.advantage {
+    width: 100%;
+    max-width: 263px;
+    margin: 0 auto;
+    text-align: center;
+
+    &-img {
+        display: inline-block;
+        border-radius: 50%;
+        border: 1px solid #6C7188;
+        padding: 10px;
+        margin-bottom: 22px;
+
+        img {
+            width: 91px;
+            background-color: $secondary-color;
+            height: 91px;
+            object-fit: scale-down;
+            border-radius: 50%;
+        }
+    }
+}
+.advantage-title {
+    font-size: 18px;
+    line-height: 124%;
+    min-height: 105px;
+    margin: 0;
+    font-weight: 400;
+}
