@@ -36,7 +36,6 @@
 
 .template-title {
     &.case-4 {
-        margin-left: -69px;
         &:before {
             background: $primary-color;
         }
@@ -44,6 +43,7 @@
         
     
 }
+
 .advantages {
     padding-bottom: 64px;
 }
@@ -71,6 +71,7 @@
         }
     }
 }
+
 .advantage-title {
     font-size: 18px;
     line-height: 124%;
