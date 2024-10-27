@@ -1,0 +1,49 @@
+.advantages {
+    padding-top: -7;
+    .template-title {
+        padding-bottom: 44px;
+        &::before {
+            background: $primary-color;
+        }
+    }
+}
+
+
+.advantage {
+    margin: 20px auto;
+    text-align: center;
+
+    &-img {
+        display: inline-block;
+        border-radius: 50%;
+        border: 1px solid #6C7188;
+        padding: 10px;
+        
+
+        img {
+            width: 91px;
+            background-color: $secondary-color;
+            height: 91px;
+            object-fit: scale-down;
+            border-radius: 50%;
+        }
+    }
+}
+
+.advantage-title {
+    font-size: 18px;
+    line-height: 124%;
+    min-height: 91px;
+    margin: 0 auto;
+    font-weight: 400;
+    max-width: 263px;
+
+}
+
+ 
+
+        
+
+
+
+

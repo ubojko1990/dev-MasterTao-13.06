@@ -27,13 +27,14 @@ const swiper = new Swiper('#banner-slider', {
 
 
   const typefile = document.querySelectorAll('.custom-file')
+  
 
   typefile.forEach(item =>{
     item.addEventListener ('change', () =>{
       const fileName = item.closest('.control-box').querySelector('.file-name')
       fileName.innerHTML = item.files[0].name;
     })
-  })
+  });
 
   
   const advantagesSlideLength = document.querySelectorAll('.advantages .swiper-slide').length
@@ -57,16 +58,36 @@ const swiper = new Swiper('#banner-slider', {
         pagination: {
           enabled: false,
           el: '.swiper-pagination',
-        }
+        },
         
       }
     }
 
   });
 
-  
 
-  const swiperSliderTemplate = new Swiper('.slider-template', {
+
+
+  const swiperTemplate = document.querySelectorAll('.slider-template') 
+  const sliderTemplatePrevArr = document.querySelectorAll('.swiper-button-prev-unique')
+  const sliderTemplateNextArr = document.querySelectorAll('.swiper-button-next-unique')
+
+  console.log(sliderTemplatePrevArr);
+  sliderTemplatePrevArr.forEach((item, index) => {
+   item.classList.add('.swiper-button-prev-unique-' + index)
+
+  })
+
+  sliderTemplateNextArr.forEach((item, index) => {
+    item.classList.add('.swiper-button-next-unique-' + index)
+ 
+  })
+
+
+
+  swiperTemplate.forEach((item, index) => {
+
+    new Swiper(item, {
     speed: 400,
     loop: true,
     slidesPerView: 1,
@@ -78,9 +99,8 @@ const swiper = new Swiper('#banner-slider', {
     },
     navigation: {
       enabled: false,
-      nextEl: '.swiper-button-next-unique',
-      prevEl: '.swiper-button-prev-unique',
-        
+      nextEl: '.swiper-button-next-unique-' + index,
+      prevEl: '.swiper-button-prev-unique-' + index,     
   },
 
   breakpoints: {
@@ -88,24 +108,23 @@ const swiper = new Swiper('#banner-slider', {
       slidesPerView: 1,
       navigation: {
         enabled: true,
-        nextEl: '.swiper-button-next-unique',
-        prevEl: '.swiper-button-prev-unique',
+        nextEl: '.swiper-button-next-unique-' + index,
+        prevEl: '.swiper-button-prev-unique-' + index,
           
     },
     pagination: {
-      enabled: true,
+      enabled: false,
     },
     
-
  },
 
    861: {
        slidesPerView: 2,
        spaceBetween: 30,
        navigation: {
-        enabled: true,
-        nextEl: '.swiper-button-next-unique',
-        prevEl: '.swiper-button-prev-unique',
+        enabled: false,
+        nextEl: '.swiper-button-next-unique-' + index,
+        prevEl: '.swiper-button-prev-unique-' + index,
        },
 
        pagination: {
@@ -119,9 +138,9 @@ const swiper = new Swiper('#banner-slider', {
         slidesPerView: 3,
         spaceBetween: 30, 
         navigation: {
-          enabled: false,
-          nextEl: '.swiper-button-next-unique',
-          prevEl: '.swiper-button-prev-unique',
+          enabled: true,
+          nextEl: '.swiper-button-next-unique-' + index,
+          prevEl: '.swiper-button-prev-unique-' + index,
             
          },
          pagination: {
@@ -131,3 +150,4 @@ const swiper = new Swiper('#banner-slider', {
       }
     }
 });
+})

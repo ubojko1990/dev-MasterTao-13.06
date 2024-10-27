@@ -1,6 +1,6 @@
 @media screen and (max-width: 861.99px) {
    .slider-template {
-    max-width: 360px;
+    max-width: 335px;
     padding-bottom: 50px;
     ~ .swiper-navigation {
         max-width: 552px;
@@ -12,6 +12,7 @@
 
 
 @media screen and (max-width: 767.99px) {
+
 .swiper-navigation {
     display: none;
 }
@@ -39,6 +40,7 @@ padding-bottom: 50px;
     .card-price {
         margin-bottom: 24px;
     }
+    
     .btn-row {
         .btn {
             width: 50%;
@@ -46,9 +48,10 @@ padding-bottom: 50px;
             padding: 13px 8px;
         }
     
+      }
+    
     }
-    
-}
+   
+  }
+        
 
-    
-}

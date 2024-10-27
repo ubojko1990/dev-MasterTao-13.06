@@ -1,0 +1,71 @@
+ .about {
+    padding: 150px 0 50px;
+    .container {
+        display: flex;
+       flex-direction: column;
+    }
+
+   
+     .about-title {
+        display: flex;
+        align-items: flex-start;
+
+    }
+   
+    .template-title {
+        .case-2 {
+            position: relative;
+            margin-bottom: 16px;
+        }
+        
+        &::before {
+            background: $secondary-color;
+        } 
+        
+      } 
+        
+    }
+
+    .about {
+         .description-row {
+            display: flex;
+            align-items: flex-start;
+
+            .description-title {
+            margin-bottom: 23px;
+            font-family: $font-primary;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 170%;
+            width: 100%;
+            max-width: 550px;
+
+     }
+
+       .img-about {
+        margin-top: -165px;
+        left: 759px;
+        height: 581px; 
+        width: 550px;
+        min-width: 360px;
+
+       }
+    }
+
+}
+
+ 
+    
+        
+    
+
+
+    
+     
+
+
+
+
+
+
+
